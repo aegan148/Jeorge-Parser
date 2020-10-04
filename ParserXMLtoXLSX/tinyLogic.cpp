@@ -6,7 +6,7 @@
 bool TinyClassObj::loadXmlSourse(const std::string way) {
     this->doc = new XMLDocument(way.c_str());
     return this->doc->ErrorID();
-    // (!this->doc->) ? false : true;//
+    // (!this->doc->) ? false : true;
 }
 */
 
