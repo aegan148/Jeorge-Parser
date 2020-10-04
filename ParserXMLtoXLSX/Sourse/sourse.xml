@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Document ProgramVersion="9.1.8.27032" Generator="GrandSmeta" DocumentType="{2B0470FD-477C-4359-9F34-EEBE36B7D340}">
+  <RegionalK Options="Percent Base"/>
+  <TerZoneK Caption="Территориальная поправка к базе 2001г" Options="Base PzAll EmAll"/>
+  <WinterCatalog WinterMode="None" WinterLinkMode="Table">
+    <CommonWinterK/>
+  </WinterCatalog>
+  <RegionInfo RegionName="ГЭСН-2017, ФЕР-2017 (с Изм. 1-5)" RegionID="7005" Zone84ID="1" Zone01Name="Базовый федеральный район" Zone01ID="1"/>
+  <Parameters Options="AddZatr SeparateFot" BasePrices="2001" BaseCalcVrs="Vr2001" TzDigits="2" BlockRoundMode="Smart" MultKPosCalcMode="UseTotalMult" TempZone="1" TsnTempZone="1" MatDigits="4" MatRoundMode="None" PosKDigits="2" ItogOptions="SeparateVrs IgnoreZeroQty IgnoreZeroPrice" FirstItogItem="K" ItogExpandTo="Default">
+    <CommonNK ActiveItems="Vk Ck Mk"/>
+    <CommonPK ActiveItems="Vk Ck Mk"/>
+  </Parameters>
+  <Indexes IndexesMode="Smr" IndexesLinkMode="OS">
+    <OsIndexes Sroy="1" Mont="1" Obor="2" Other="1"/>
+    <IndexesPos>
+      <Index Code="1" SMR="7,9"/>
+    </IndexesPos>
+  </Indexes>
+  <AddZatrats>
+    <AddZatrGlava Glava="8"/>
+    <AddZatrGlava Glava="9"/>
+    <AddZatrGlava Glava="10"/>
+    <AddZatrGlava Glava="11"/>
+    <AddZatrGlava Glava="12"/>
+    <AddZatrGlava Glava="13"/>
+    <AddZatrGlava Glava="14"/>
+    <AddZatrGlava Glava="15"/>
+  </AddZatrats>
+  <OsInfo OSChapter="1" LinkType="LB">
+    <CCChapter Cons="2" Rec="2" Road="2"/>
+  </OsInfo>
+  <VidRab_Catalog Caption="Основной справочник видов работ">
+    <Vids_Rab Type="Виды работ 2001г" CatFile="ВР МДС 81-33.2004" NrspFile="НРСП МДС 81-33.2004">
+      <VidRab_Group Caption="Общестроительные работы" ID="0">
+        <Vid_Rab Caption="Конструкции из кирпича и блоков" ID="10015" Nacl="122" Plan="80" NaclCurr="122" PlanCurr="80" NaclMask="ФОТ" PlanMask="ФОТ"/>
+      </VidRab_Group>
+    </Vids_Rab>
+    <Vids_Rab Type="Виды работ 1984г" CatFile="ЕРЕР-84" NrspFile="НРСП ЕРЕР-84"/>
+  </VidRab_Catalog>
+  <Chapters>
+    <Chapter Caption="Новый раздел" SysID="1">
+      <Position Caption="Кладка стен кирпичных наружных: простых при высоте этажа до 4 м" Number="1" Code="ФЕР08-02-001-01" Units="м3" SysID="1" Quantity="100" PriceLevel="2001" IndexCode="1" DBComment="Приказ Минстроя России от 30.12.2016 №1039/пр" DBFlags="Comment TechK" PzSync="Yes" Vr2001="10015">
+        <Quantity Fx="100" Result="100"/>
+        <PriceBase PZ="200,31" OZ="44,87" EM="34,56" ZM="5,4" MT="120,88"/>
+        <Resources>
+          <Tzr Caption="Затраты труда рабочих" Code="1-2-7" Units="чел.-ч" Quantity="5,4" WorkClass="2,7">
+            <PriceBase Value="8,31"/>
+          </Tzr>
+          <Tzm Caption="Затраты труда машинистов" Code="2" Units="чел.-ч" Quantity="0,4"/>
+          <Mch Caption="Краны башенные, грузоподъемность 8 т" Code="91.05.01-017" Units="маш.час" Quantity="0,4">
+            <PriceBase Value="86,4" ZM="13,5"/>
+          </Mch>
+          <Mat Caption="Вода" Code="01.7.03.01-0001" Units="м3" Quantity="0,44">
+            <PriceBase Value="2,44"/>
+          </Mat>
+          <Mat Caption="Раствор готовый кладочный цементно-известковый марки: 25" Code="04.3.01.12-0002" Units="м3" Quantity="0,24">
+            <PriceBase Value="497"/>
+          </Mat>
+          <Mat Caption="Кирпич керамический, силикатный или пустотелый" Code="06.1.01.05" Units="1000 шт" Quantity="0,394" Options="NotCount CountInPlace">
+            <PriceBase Value="5"/>
+          </Mat>
+          <Mat Caption="Бруски обрезные хвойных пород длиной: 4-6,5 м, шириной 75-150 мм, толщиной 40-75 мм, IV сорта" Code="11.1.03.01-0080" Units="м3" Quantity="0,0005">
+            <PriceBase Value="1056"/>
+          </Mat>
+        </Resources>
+        <WorksList>
+          <Work Caption="Кладка конструкций из кирпича."/>
+          <Work Caption="Устройство ниш для отопления, вентиляционных и дымовых каналов с разделками борозд, осадочных и температурных швов, архитектурных и конструктивных деталей."/>
+        </WorksList>
+      </Position>
+    </Chapter>
+  </Chapters>
+  <GsDocSignatures>
+    <Item Caption="Основание" ID="100"/>
+    <Item Caption="Заказчик" ID="230"/>
+    <Item Caption="Утверждаю" ID="200"/>
+    <Item Caption="Подрядчик" ID="240"/>
+    <Item Caption="Согласовано" ID="210"/>
+    <Item Caption="Дата составления сметы" ID="102"/>
+    <Item Caption="Составил" ID="300"/>
+    <Item Caption="Проверил" ID="310"/>
+  </GsDocSignatures>
+  <ReportOptions Options="Grouping SeparateZakPodr" Kk="1" RangingGroups="Mch Mat">
+    <RangingRates Mch="20" Mat="20"/>
+  </ReportOptions>
+</Document>
